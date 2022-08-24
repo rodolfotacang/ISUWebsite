@@ -53,32 +53,36 @@
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Course Recommendation System</div>
-                <div class="list-group list-group-flush" >
-                    <div class="list-group-item  p-3"> 
+                <div class="sidebar-heading border-bottom bg-light" style="text-align:center;"><h3>COURSE RECOMMENDATION SYSTEM</h3></div>
+                <div class="list-group list-group-flush w-100" >
+                    <div class="list-group-item  p-3 "> 
                         <form>
-                            <div class="form-group" >
-                              <label for="exampleInputEmail1">ENTER General Weighted Average</label>
+                            <div class="form-group " >
+                              <label for="GWA">ENTER General Weighted Average</label>
                               <br>  <br>
-                              <input type="input" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter GWA">
+                              <input class="form-control" name="gwainput" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "5" placeholder="GWA" />
                               <form>
                                 <div class="form-group">
                                     <br>
-                                  <label for="exampleFormControlFile1">Input GWA Image</label>
-                                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                  <label for="imgGWA">Input GWA Image</label>
+                                 
+                                  <input type="file" class="form-control-file" pattern="[0-9]+" id="">
+
+                                 
                                 </div>
                               </form>
-                             <br>
+                             <br>   
                             </div>
                             <div class="form-group">
-                              <label for="exampleInputPassword1">ENTER Entrance Examination Score</label> 
+                              <label for="EXAmresult">ENTER Entrance Examination Score</label> 
 
                               <br><br>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Entrance Score">
+                          
+                              <input class="form-control"  class="form-control" name="entrancescore" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "5" placeholder="Entrance Exam Score"/>
                             </div>
                             <div class="form-check">
                                 <br>
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <input type="checkbox"  class="form-check-input" id="exampleCheck1">
                             
                               <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                             </div>
