@@ -26,40 +26,39 @@
                 border-color: #28a745;
                 box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
                 }    
-            nav{
-               display:flex;
-            }
-   
-            .sidebar-wrapper{
-                width:200px !important;
-            }
-            .border-end{
-                width: 300px;
-            }
-       
+    
            li.navitem{
             vertical-align: middle;
+           }
+           .nav-item{
+                height:100%;
+           }
+           li{
+    
+            line-height: 30px;
            }
         </style>
     </head>
     <body>
 
-<section class="header-image " >
+<section class=" " >
 <div>
-    hellow world
+<img src="assets/img/Untitled-1.jpg" width="100%" height="190px;" alt="">
 </div>
 </section>
 
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light" style="text-align:center;"><h3>COURSE RECOMMENDATION SYSTEM</h3></div>
-                <div class="list-group list-group-flush w-100" >
-                    <div class="list-group-item  p-3 "> 
+            <div class="border-end bg-white" id="sidebar-wrapper" >
+                <label for="Title of system" class="p-3" style="font-size: 20px;"> Course Recommendation System
+                    <hr> </label>
+           
+                <div class="list-group list-group-flush " >
+                    <div class="list-group-item  p-3 " > 
                         <form>
                             <div class="form-group " >
                               <label for="GWA">ENTER General Weighted Average</label>
-                              <br>  <br>
+                          <br>   <br>
                               <input class="form-control" name="gwainput" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "5" placeholder="GWA" />
                               <form>
                                 <div class="form-group">
@@ -95,14 +94,14 @@
                 </div>
             </div>
             <!-- Page content wrapper-->
-            <div id="page-content-wrapper">
+            <div id="page-content-wrapper" >
                 <!-- Top navigation-->
                 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                     <div class="container-fluid">
                         <button class="btn btn-success" id="sidebarToggle"><i class="fa fa-indent" aria-hidden="true"></i></button>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0" >
                                 <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
