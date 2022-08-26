@@ -32,16 +32,18 @@
                       <form class="mb-3 mt-md-4" action="index.html">
                         <h2 class="fw-bold mb-2 text-uppercase ">Course Recommendation System</h2>
                         <p class=" mb-5">Please enter your login and password!</p>
-
+                        
+                      <!--start of forms on submit-->  
+                      <form action="">
                         <div class="mb-3">
                           <label for="uname" class="form-label ">Username</label>
-                          <input type="text" class="form-control" id="username" placeholder="Username">
+                          <input type="text" class="form-control" id="username" placeholder="Username" required>
                         </div>
                         <div class="mb-3">
                           <label for="password" class="form-label ">Password</label>
-                          <input type="password" class="form-control" id="password" placeholder="Password">
+                          <input type="password" class="form-control" id="password" placeholder="Password" required>
                         </div>
-                        <p class="small"><a class="text-primary" href="forget-password.html">Forgot password?</a></p>
+                     <!--   <p class="small"><a class="text-primary" href="forget-password.html">Forgot password?</a></p> -->
                         <div class="d-grid">
                           <button class="btn btn-outline-dark" type="submit"> <i class="fa fa-sign-in" aria-hidden="true"></i>
                             Login</button>
@@ -52,7 +54,9 @@
                             class="text-primary fw-bold" data-bs-toggle="modal" data-bs-target="#staticmodalSIGNUP">Sign
                             Up</a></p>
                       </div>
-          
+                    </form>
+                    <!--end of forms on submit-->
+
                     </div>
                   </div>
                 </div>
@@ -74,34 +78,34 @@
       </div>
       <div class="modal-body">
         <!--start of the forms fill up on the modal-->
-        <form action="">
+        <form action="/action_page.php">
             <div class="form-group">
               <label for="unameSignup">First name, Middle Name, Last Name </label>
               <div class="row">
                 <div class="col">
-                  <input type="text" class="form-control" id="fname" placeholder="First name">
+                  <input type="text" class="form-control" id="fname" placeholder="First name" onkeyup="this.value = this.value.replace(/[^a-z^-]/, '')" required/>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" id="mname" placeholder="Middle name">
+                  <input type="text" class="form-control" id="mname" placeholder="Middle name" onkeyup="this.value = this.value.replace(/[^a-z^-]/, '')"  required/>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" id="lname" placeholder="Last name">
+                  <input type="text" class="form-control" id="lname" placeholder="Last name" onkeyup="this.value = this.value.replace(/[^a-z^-]/, '')" required/>
                 </div>
               </div>
             </div>
           <div class="form-group">
             <label for="unameSignup">Username </label>
-            <input type="unameSignup" class="form-control" id="" aria-describedby="" placeholder="Enter Username">
+            <input type="unameSignup" class="form-control" id="" aria-describedby="" placeholder="Enter Username" required>
             <small id="notice" class="form-text text-muted">We'll never share your details with anyone else.</small>
           </div>
           <div class="form-group">
             <label for="pwordSignup">Password</label>
-            <input type="password" class="form-control" id="pwordSignup" placeholder="Password">
+            <input type="password" class="form-control" id="pwordSignup" placeholder="Password" required>
           </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> <i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
-            <button type="button" class="btn btn-primary"> <i class="fa fa-save" aria-hidden="true"></i>  Register</button>
+            <button type="button submit" class="btn btn-success"> <i class="fa fa-save" aria-hidden="true"></i>  Register</button>
           </div>
         </form>
     <!--start of the forms fill up on the modal-->

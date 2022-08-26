@@ -11344,4 +11344,13 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   }
   
 }
+/* BACKGROUND FOR THE INPUTS */
+.modal-header{
+  background-color: #198754 !important;
+  color:white;
+  
+}
 
+.btn-close {
+  color: white !important ;
+}
