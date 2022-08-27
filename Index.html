@@ -38,51 +38,12 @@
             line-height: 30px;
            }
 
-           .menu {
-  display: flex;
-}
-
-.menu button {
-  margin: 10px;
-  cursor: pointer;
-}
-
-.button_active {
-  color: teal;
-}
-
-.content_inside {
-  display: none;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.content_inside_active {
-  display: block;
-}
-
+        
         </style>
 
     <body>
 
-        <script>
-            let button = document.querySelectorAll('.menu button');
-let content_inside = document.querySelectorAll('.content_inside');
 
-Array.from(button).forEach(function(buttonArray, i) {
-buttonArray.addEventListener('click', function() {
-
-    Array.from(button).forEach(buttonAll => buttonAll.classList.remove('button_active'));
-    
-    Array.from(content_inside).forEach(content_insideAll => content_insideAll.classList.remove('content_inside_active'));
-    
-    button[i].classList.add('button_active'); 
-    
-    content_inside[i].classList.add('content_inside_active');  
-  });
-});
-        </script>
     </head>
 <section class=" " >
 <div>
@@ -146,7 +107,7 @@ buttonArray.addEventListener('click', function() {
                         <button class="btn btn-success" id="sidebarToggle"><i class="fa fa-indent" aria-hidden="true"></i></button>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0" >
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0" id="target">
                                 <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
@@ -214,7 +175,7 @@ buttonArray.addEventListener('click', function() {
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PS</a>
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#!">BSITech - AUTOMOTIVE</a>
+                                        <a class="dropdown-item" value="bsitechauto" href="#!">BSITech - AUTOMOTIVE</a>
                                         <a class="dropdown-item" href="#!">BSITech - ELECTRONICS</a>
                                
                                 </li>
@@ -234,39 +195,24 @@ buttonArray.addEventListener('click', function() {
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4">Simple Sidebar</h1>
-                    <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-                    <p>
-                        Make sure to keep all page content within the
-                        <code>#page-content-wrapper</code>
-                        . The top navbar is optional, and just for demonstration. Just create an element with the
-                        <code>#sidebarToggle</code>
-                        ID which will toggle the menu when clicked.
-                    </p>
+                    <!--start of content per dropdown-->
+                    <div id="bsitechauto" class="inv">
+                        <p>here i am
+
+                        </p>
+                    </div>
+                    <div id="bsitechauto" class="inv">
+                        <p>here i am
+
+                        </p>
+                    </div>
+                    <!--end of content per dropdown-->
                 </div>
-
-                
-                <div class="container">
-                    <div class="menu">
-                      <button class="button_active">Content 1</button>
-                      <button>Content 2</button>
-                      <button>Content 3</button>
-                    </div>
-                    <div class="content">
-                      <div class="content_inside content_inside_active">
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                      </div>
-                      <div class="content_inside">
-                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                      </div>
-                      <div class="content_inside">
-                      "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-                      </div>
-                    </div>
-                  </div>
-
-            </div> <!-- END OF Page content-->
+                <!-- END OF Page content-->
+            </div> 
         </div>
+        <!--script for the logic of content change same page-->
+      
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
