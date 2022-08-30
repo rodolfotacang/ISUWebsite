@@ -67,9 +67,20 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 
-/* font that i want for the title */
-@font-face {
-  font-family: "fntfce";
-  src: url("/fonts/gear-webfont.woff2") format("woff2"),
-       url("/fonts/gear-webfont.woff") format("woff");
+/* for the image of automotive content */
+
+@media only screen and (min-width: 600px) {
+
+
+  .img_autobanner{
+    height:250px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+
+  .img_autobanner{
+    height:100px;
+  }
+  
 }
