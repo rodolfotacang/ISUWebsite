@@ -65,3 +65,11 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   position: fixed;
   top: 0;
 }
+
+
+/* font that i want for the title */
+@font-face {
+  font-family: "fntfce";
+  src: url("/fonts/gear-webfont.woff2") format("woff2"),
+       url("/fonts/gear-webfont.woff") format("woff");
+}
