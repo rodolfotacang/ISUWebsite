@@ -84,3 +84,54 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   }
   
 }
+
+/* for the image of ELECTRONICS content */
+
+@media only screen and (min-width: 600px) {
+
+
+  .img_autobanner{
+    height:250px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+
+  .img_autobanner{
+    height:100px;
+  }
+  
+}
+
+/* BACKGROUND FOR THE INPUTS POLYTECHNIC */
+#cardPoly{
+  background-color: #096da2 !important;
+  color:white;
+  
+}
+
+/* BACKGROUND FOR THE INPUTS educ */
+#cardeduc{
+  background-color:orchid !important;
+  color:white;
+  
+}
+
+
+/* for the image of coe content */
+
+@media only screen and (min-width: 600px) {
+
+
+  .img_autobannerbeed, .img_autobannerbsed{
+    height:250px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+
+  .img_autobannerbeed, .img_autobannerbsed{
+    height:100px;
+  }
+  
+}
