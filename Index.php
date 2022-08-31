@@ -113,10 +113,7 @@
              
                     <?php include 'poly.html';?>
                     <?php include 'educ.html';?>
-                          
-                             
-
-                          
+                    <?php include 'informationTech.html';?> 
                
                 </div>
                 <!-- END OF Page content-->
