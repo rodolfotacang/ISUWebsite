@@ -62,8 +62,6 @@
         <div class="d-flex " id="wrapper">
             <!-- Sidebar-->
             <div class="border-end bg-white " id="sidebar-wrapper" >
-            
-           
                 <div class="list-group list-group-flush sticky-top" >
                     <label for="Title of system" class="p-3" style="font-size: 20px;"> Course Recommendation System
                         <hr> 
@@ -107,86 +105,8 @@
             <!-- Page content wrapper-->
             <div id="page-content-wrapper ">
                 <!-- Top navigation-->
-          
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top">
-                    <div class="container-fluid">
-                        <button class="btn btn-success" id="sidebarToggle"><i class="fa fa-indent" aria-hidden="true"></i></button>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0" id="target">
-                                <li class="nav-item active"><a class="nav-link" href="#!"> <b>HOME  </b>   </a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">    <b> CBM</b>    </a>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#!">BSBA</a>
-                                        <a class="dropdown-item" href="#!">BSENT</a>
-                                        <a class="dropdown-item" href="#!">BSHM</a>
-                                        <a class="dropdown-item" href="#!">BSTM</a>
-                                        <a class="dropdown-item" href="#!">BSAIS</a>
-                                        <a class="dropdown-item" href="#!">BSMA</a>   
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">   <b> CGSICT    </b>  </a>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#!">BSIT</a>
-                                        <a class="dropdown-item" href="#!">BSCS</a>
-                           
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <b>CCJE</b>    </a>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#!">BSCRIM</a>
-                                     
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <b>SAAS</b>    </a>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="coe" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <b>COE</b>   </a>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#coe">BEED</a>
-                                        <a class="dropdown-item" href="#BSED">BSED</a>
-                                 
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">   <b>IAT</b>  </a>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#!">BAI</a>
-                                     
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#polytechnicAuto" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">   <b>PS</b>   </a>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" value="bsitechauto" href="#polytechnicAuto">BSITech - AUTOMOTIVE</a>
-                                        <a class="dropdown-item" href="#polytechnicELEC">BSITech - ELECTRONICS</a>
-                               
-                                </li>
-                                <li class="nav-item">
-         
-                                    <div class="input-group mb-3" id="navsearchbar">
-                                        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                          <button class="btn btn-outline-success" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                        </div>
-                                      </div>
-                            
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-           
+                <?php include 'navtop.html';?>
+            
                 <!-- Page content-->
                 <div class="container-fluid p-4 " >
                     <!--start of content per dropdown-->
