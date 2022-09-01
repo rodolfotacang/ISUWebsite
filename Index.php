@@ -115,6 +115,7 @@
                     <?php include 'educ.html';?>
                     <?php include 'informationTech.html';?> 
                     <?php include 'ccje.html';?> 
+                    <?php include 'agri.html';?> 
                
                 </div>
                 <!-- END OF Page content-->

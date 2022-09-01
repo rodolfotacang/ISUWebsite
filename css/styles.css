@@ -133,6 +133,13 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   
 }
 
+/* BACKGROUND FOR THE INPUTS bsagri */
+#cardagri{
+  background-color:#039d57 !important;
+  color:white;
+  
+}
+
 
 /* for the image of coe content */
 
@@ -169,3 +176,5 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   }
   
 }
+
+
