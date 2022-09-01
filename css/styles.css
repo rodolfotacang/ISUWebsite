@@ -128,7 +128,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 /* BACKGROUND FOR THE INPUTS bscrim */
 #cardcrim{
-  background-color:#9900cc !important;
+  background-color:#c246eb !important;
   color:white;
   
 }
@@ -136,6 +136,13 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 /* BACKGROUND FOR THE INPUTS bsagri */
 #cardagri{
   background-color:#039d57 !important;
+  color:white;
+  
+}
+
+/* BACKGROUND FOR THE INPUTS SAAS */
+#cardsaas{
+  background-color:#9800cb !important;
   color:white;
   
 }
