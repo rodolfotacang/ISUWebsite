@@ -148,6 +148,15 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 
+/* BACKGROUND FOR THE INPUTS CBM */
+#cardcbm{
+  background-color:#ffce2f !important;
+  color: #000;
+  
+}
+
+
+
 /* for the image of coe content */
 
 @media only screen and (min-width: 600px) {

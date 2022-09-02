@@ -117,6 +117,7 @@
                     <?php include 'ccje.html';?> 
                     <?php include 'agri.html';?> 
                     <?php include 'saas.html';?> 
+                    <?php include 'cbm.html';?> 
                
                 </div>
                 <!-- END OF Page content-->
